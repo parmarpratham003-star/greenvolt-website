@@ -5,28 +5,40 @@ const Home = () => {
     <>
       {/* ================= HEADER ================= */}
       <header className="bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 text-white sticky top-0 z-50 shadow-xl">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <h1 className="text-2xl font-bold tracking-widest">
-            GREEN<span className="text-gray-400">VOLT</span>
-          </h1>
+  <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
-            <nav className="hidden md:flex gap-8 text-sm font-medium">
-            <Link to="/" className="hover:text-gray-300 transition">Home</Link>
-            <Link to="/About" className="hover:text-gray-300 transition">About</Link>
-            <Link to="/Vehicles" className="hover:text-gray-300 transition">Vehicles</Link>
-            <Link to="/Whychooseus" className="hover:text-gray-300 transition">WhyChooseUse</Link>
-            <Link to="/Contact" className="hover:text-gray-300 transition">Contact</Link>
-          </nav>
-         
+    {/* LOGO + BRAND */}
+    <div className="flex items-center gap-3">
+      <img
+        src="/image/logo.jpeg"   // 🔁 replace with your actual path
+        alt="GreenVolt Logo"
+        className="w-10 h-10 rounded-full object-contain"
+      />
+      <h1 className="text-2xl font-bold tracking-widest">
+        GREEN<span className="text-gray-400">VOLT</span>
+      </h1>
+    </div>
 
-          <Link
-            to="/contact"
-            className="bg-gray-200 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-300 transition"
-          >
-            Visit Showroom
-          </Link>
-        </div>
-      </header>
+    {/* NAVIGATION */}
+    <nav className="hidden md:flex gap-8 text-sm font-medium">
+      <Link to="/" className="hover:text-gray-300 transition">Home</Link>
+      <Link to="/About" className="hover:text-gray-300 transition">About</Link>
+      <Link to="/Vehicles" className="hover:text-gray-300 transition">Vehicles</Link>
+      <Link to="/Whychooseus" className="hover:text-gray-300 transition">Why Choose Us</Link>
+      <Link to="/Contact" className="hover:text-gray-300 transition">Contact</Link>
+    </nav>
+
+    {/* CTA BUTTON */}
+    <Link
+      to="/contact"
+      className="bg-gray-200 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-300 transition"
+    >
+      Visit Showroom
+    </Link>
+
+  </div>
+</header>
+
 
       {/* ================= MAIN ================= */}
       <main className="bg-gray-50">
@@ -184,21 +196,109 @@ const Home = () => {
           Driving India’s Electric Future.
         </div>
       </footer> */}
-      <footer className="bg-gray-900 text-gray-300 py-12"> 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8"> <div>
-          <h3 className="text-xl font-bold text-white mb-2">GREENVOLT</h3>
-           <p className="text-sm">Driving India towards a smarter electric future.</p> </div>
-            <div> <h4 className="font-semibold text-white mb-2">Quick Links</h4> 
-            <ul className="space-y-2 text-sm"> 
-              <li>Home</li> <li>About</li> 
-              <li>Vehicles</li>
-              <li>Contact</li> 
-            </ul> </div>
-             <div> <h4 className="font-semibold text-white mb-2">Contact</h4>
-              <p className="text-sm">Mahesana, Gujarat</p>
-              <p className="text-sm">📞 +91 XXXXX XXXXX</p> </div> </div> 
-              <div className="text-center text-xs text-gray-400 mt-8"> © 2025 GREENVOLT. All rights reserved. </div>
-        </footer>
+     {/* ================= FOOTER ================= */}
+<footer className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-gray-300 pt-20 pb-6">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* TOP FOOTER */}
+    <div className="grid md:grid-cols-3 gap-14 pb-14">
+
+      {/* BRAND */}
+      <div>
+        <div className="flex items-center gap-3 mb-4">
+          <img
+            src="/image/logo.jpeg"   // 🔁 update path if needed
+            alt="GreenVolt Logo"
+            className="w-10 h-10 rounded-full"
+          />
+          <div>
+            <h2 className="text-xl font-bold text-white tracking-wider">
+              GREENVOLT
+            </h2>
+            <p className="text-sm text-gray-400">
+              Mahesana, Gujarat
+            </p>
+          </div>
+        </div>
+
+        <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
+          Leading the electric revolution in Gujarat with sustainable,
+          stylish, and reliable electric vehicles.
+        </p>
+      </div>
+
+      {/* QUICK LINKS */}
+      <div>
+        <h3 className="text-lg font-semibold text-white mb-4">
+          Quick Links
+        </h3>
+        <ul className="space-y-3 text-sm">
+          <li>
+            <a href="/about" className="hover:text-green-400 transition">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="/vehicles" className="hover:text-green-400 transition">
+              Our Vehicles
+            </a>
+          </li>
+          <li>
+            <a href="/whychooseus" className="hover:text-green-400 transition">
+              Why Choose Us
+            </a>
+          </li>
+          <li>
+            <a href="/contact" className="hover:text-green-400 transition">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* CONTACT INFO */}
+      <div>
+        <h3 className="text-lg font-semibold text-white mb-4">
+          Contact Info
+        </h3>
+
+        <ul className="space-y-4 text-sm">
+          <li className="flex gap-3">
+            <span className="text-green-400">📍</span>
+            <span>
+              10, Dediyasan G.I.D.C., Opp. Swagat Residency,
+              Modhera Road, Mehsana — 384 002
+            </span>
+          </li>
+
+          <li className="flex gap-3">
+            <span className="text-green-400">📞</span>
+            <span>9712304660</span>
+          </li>
+
+          <li className="flex gap-3">
+            <span className="text-green-400">📞</span>
+            <span>9974451950</span>
+          </li>
+
+          <li className="flex gap-3">
+            <span className="text-green-400">✉️</span>
+            <span>info@greenvoltev.in</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    {/* DIVIDER */}
+    <div className="border-t border-gray-800 pt-6 text-center text-sm text-gray-400">
+      © 2024 GREENVOLT. All rights reserved | Electric Vehicles in Mahesana |
+      EV Showroom Gujarat
+    </div>
+
+  </div>
+</footer>
+
     </>
   
   );

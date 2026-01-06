@@ -4,29 +4,41 @@ const About = () => {
       
     <div className="font-sans text-gray-800">
       {/* ================= HEADER ================= */}
-      <header className="bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 text-white sticky top-0 z-50 shadow-xl">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <h1 className="text-2xl font-bold tracking-widest">
-            GREEN<span className="text-gray-400">VOLT</span>
-          </h1>
+   <header className="bg-gradient-to-r from-gray-950 via-gray-900 to-gray-800 text-white sticky top-0 z-50 shadow-xl">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
-            <nav className="hidden md:flex gap-8 text-sm font-medium">
-            <Link to="/" className="hover:text-gray-300 transition">Home</Link>
-            <Link to="/About" className="hover:text-gray-300 transition">About</Link>
-            <Link to="/Vehicles" className="hover:text-gray-300 transition">Vehicles</Link>
-            <Link to="/Whychooseus" className="hover:text-gray-300 transition">WhyChooseUse</Link>
-            <Link to="/Contact" className="hover:text-gray-300 transition">Contact</Link>
-          </nav>
-         
+      {/* LOGO + BRAND */}
+      <div className="flex items-center gap-3">
+      <img
+        src="/image/logo.jpeg"   // 🔁 replace with your actual path
+        alt="GreenVolt Logo"
+        className="w-10 h-10 rounded-full object-contain"
+      />
+      <h1 className="text-2xl font-bold tracking-widest">
+        GREEN<span className="text-gray-400">VOLT</span>
+      </h1>
+      </div>
 
-          <Link
-            to="/contact"
-            className="bg-gray-200 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-300 transition"
-          >
-            Visit Showroom
-          </Link>
-        </div>
-      </header>
+    {/* NAVIGATION */}
+    <nav className="hidden md:flex gap-8 text-sm font-medium">
+      <Link to="/" className="hover:text-gray-300 transition">Home</Link>
+      <Link to="/About" className="hover:text-gray-300 transition">About</Link>
+      <Link to="/Vehicles" className="hover:text-gray-300 transition">Vehicles</Link>
+      <Link to="/Whychooseus" className="hover:text-gray-300 transition">Why Choose Us</Link>
+      <Link to="/Contact" className="hover:text-gray-300 transition">Contact</Link>
+    </nav>
+
+    {/* CTA BUTTON */}
+    <Link
+      to="/contact"
+      className="bg-gray-200 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold hover:bg-gray-300 transition"
+    >
+      Visit Showroom
+    </Link>
+
+  </div>
+</header>
+
       
       {/* ================= PAGE HERO ================= */}
       <section className="relative overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-gray-800 text-white py-32 text-center">
