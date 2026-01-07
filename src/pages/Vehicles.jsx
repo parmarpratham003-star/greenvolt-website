@@ -353,11 +353,12 @@ const Vehicles = () => {
     </div>
 
     {/* Timeline */}
-    <div className="space-y-24">
+    <div className="relative space-y-24">
 
       {/* Item 1 */}
-      <div className="grid md:grid-cols-2 gap-16 items-center">
-        <div className="text-right md:pr-16">
+      <div className="grid md:grid-cols-[1fr_1fr] gap-16 items-center">
+        {/* LEFT */}
+        <div className="text-right pr-12">
           <p className="text-6xl font-extrabold text-gray-900 mb-2">
             ₹2,500
           </p>
@@ -366,8 +367,10 @@ const Vehicles = () => {
           </p>
         </div>
 
-        <div className="relative pl-10 border-l border-gray-300">
-          <span className="absolute -left-3 top-2 w-6 h-6 rounded-full bg-gray-900"></span>
+        {/* RIGHT */}
+        <div className="relative pl-14">
+          <span className="absolute left-0 top-1 w-5 h-5 rounded-full bg-gray-900"></span>
+          <div className="absolute left-2 top-0 bottom-0 w-px bg-gray-300"></div>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-4">
             Easy EMI Plans
@@ -383,9 +386,11 @@ const Vehicles = () => {
       </div>
 
       {/* Item 2 */}
-      <div className="grid md:grid-cols-2 gap-16 items-center">
-        <div className="order-2 md:order-1 relative pl-10 border-l border-gray-300">
-          <span className="absolute -left-3 top-2 w-6 h-6 rounded-full bg-gray-700"></span>
+      <div className="grid md:grid-cols-[1fr_1fr] gap-16 items-center">
+        {/* LEFT */}
+        <div className="relative pr-14 text-right">
+          <span className="absolute right-0 top-1 w-5 h-5 rounded-full bg-gray-700"></span>
+          <div className="absolute right-2 top-0 bottom-0 w-px bg-gray-300"></div>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-4">
             Partner Bank Loans
@@ -399,7 +404,8 @@ const Vehicles = () => {
           </ul>
         </div>
 
-        <div className="order-1 md:order-2 text-left md:pl-16">
+        {/* RIGHT */}
+        <div className="pl-12">
           <p className="text-6xl font-extrabold text-gray-900 mb-2">
             7.5%
           </p>
@@ -410,8 +416,9 @@ const Vehicles = () => {
       </div>
 
       {/* Item 3 */}
-      <div className="grid md:grid-cols-2 gap-16 items-center">
-        <div className="text-right md:pr-16">
+      <div className="grid md:grid-cols-[1fr_1fr] gap-16 items-center">
+        {/* LEFT */}
+        <div className="text-right pr-12">
           <p className="text-6xl font-extrabold text-gray-900 mb-2">
             ₹15,000
           </p>
@@ -420,8 +427,10 @@ const Vehicles = () => {
           </p>
         </div>
 
-        <div className="relative pl-10 border-l border-gray-300">
-          <span className="absolute -left-3 top-2 w-6 h-6 rounded-full bg-gray-500"></span>
+        {/* RIGHT */}
+        <div className="relative pl-14">
+          <span className="absolute left-0 top-1 w-5 h-5 rounded-full bg-gray-500"></span>
+          <div className="absolute left-2 top-0 bottom-0 w-px bg-gray-300"></div>
 
           <h3 className="text-xl font-semibold text-gray-900 mb-4">
             Government Incentives
@@ -439,6 +448,7 @@ const Vehicles = () => {
     </div>
   </div>
 </section>
+
 
 {/* ================= TECHNICAL SPECIFICATIONS ================= */}
 <section className="bg-gray-50 py-32">
