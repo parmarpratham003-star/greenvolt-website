@@ -241,21 +241,103 @@ const About = () => {
       </section>
 
       {/* ================= FOOTER ================= */}
-      <footer className="bg-gray-900 text-gray-300 py-12"> 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8"> <div>
-          <h3 className="text-xl font-bold text-white mb-2">GREENVOLT</h3>
-           <p className="text-sm">Driving India towards a smarter electric future.</p> </div>
-            <div> <h4 className="font-semibold text-white mb-2">Quick Links</h4> 
-            <ul className="space-y-2 text-sm"> 
-              <li>Home</li> <li>About</li> 
-              <li>Vehicles</li>
-              <li>Contact</li> 
-            </ul> </div>
-             <div> <h4 className="font-semibold text-white mb-2">Contact</h4>
-              <p className="text-sm">Mahesana, Gujarat</p>
-              <p className="text-sm">📞 +91 XXXXX XXXXX</p> </div> </div> 
-              <div className="text-center text-xs text-gray-400 mt-8"> © 2025 GREENVOLT. All rights reserved. </div>
-        </footer>
+      <footer className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-gray-300 pt-20 pb-6">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* TOP FOOTER */}
+          <div className="grid md:grid-cols-3 gap-14 pb-14">
+            {/* BRAND */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <img
+                  src="/image/logo.jpeg"
+                  alt="GreenVolt Logo"
+                  className="w-10 h-10 rounded-full"
+                />
+                <div>
+                  <h2 className="text-xl font-bold text-white tracking-wider">
+                    GREENVOLT
+                  </h2>
+                  <p className="text-sm text-gray-400">
+                    Mahesana, Gujarat
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
+                Leading the electric revolution in Gujarat with sustainable,
+                stylish, and reliable electric vehicles.
+              </p>
+            </div>
+
+            {/* QUICK LINKS */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Quick Links
+              </h3>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <Link to="/about" className="hover:text-green-400 transition">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/vehicles" className="hover:text-green-400 transition">
+                    Our Vehicles
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/whychooseus" className="hover:text-green-400 transition">
+                    Why Choose Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-green-400 transition">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* CONTACT INFO */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Contact Info
+              </h3>
+
+              <ul className="space-y-4 text-sm">
+                <li className="flex gap-3">
+                  <span className="text-green-400">📍</span>
+                  <span>
+                    10, Dediyasan G.I.D.C., Opp. Swagat Residency,
+                    Modhera Road, Mehsana — 384 002
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">📞</span>
+                  <span>9712304660</span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">📞</span>
+                  <span>9974451950</span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">✉️</span>
+                  <span>info@greenvoltev.in</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* DIVIDER */}
+          <div className="border-t border-gray-800 pt-6 text-center text-sm text-gray-400">
+            © 2024 GREENVOLT. All rights reserved | Electric Vehicles in Mahesana |
+            EV Showroom Gujarat
+          </div>
+        </div>
+      </footer>
 
     </div>
   );

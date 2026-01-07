@@ -333,100 +333,113 @@ const Vehicles = () => {
         </div>
       </section>
       {/* ================= FINANCING SOLUTIONS ================= */}
-<section className="bg-gray-50 py-28">
-  <div className="max-w-7xl mx-auto px-6 text-center">
+<section className="bg-gray-50 py-32">
+  <div className="max-w-6xl mx-auto px-6">
 
-    <span className="inline-block mb-4 px-4 py-1 rounded-full bg-gray-200 text-gray-700 text-xs font-semibold tracking-wide">
-      Financing Options
-    </span>
+    {/* Header */}
+    <div className="text-center mb-24">
+      <span className="inline-block mb-4 px-5 py-1.5 rounded-full bg-gray-200 text-gray-700 text-xs font-semibold tracking-widest">
+        FINANCING
+      </span>
 
-    <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
-      Easy Financing Solutions
-    </h2>
+      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
+        Financing That Works For You
+      </h2>
 
-    <p className="text-gray-600 max-w-3xl mx-auto mb-16 text-lg">
-      We offer flexible financing options to make your electric vehicle purchase
-      affordable, simple, and stress-free.
-    </p>
+      <p className="max-w-3xl mx-auto text-gray-600 text-lg">
+        Designed to keep ownership simple, transparent and stress-free —
+        from your first EMI to long-term savings.
+      </p>
+    </div>
 
-    <div className="grid md:grid-cols-3 gap-10">
+    {/* Timeline */}
+    <div className="space-y-24">
 
-      {/* Easy EMI */}
-      <div className="bg-white rounded-3xl p-10 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-gray-100 text-gray-800 text-2xl">
-          💳
+      {/* Item 1 */}
+      <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="text-right md:pr-16">
+          <p className="text-6xl font-extrabold text-gray-900 mb-2">
+            ₹2,500
+          </p>
+          <p className="text-sm text-gray-500 uppercase tracking-wider">
+            Monthly EMI Starting
+          </p>
         </div>
 
-        <h3 className="text-xl font-semibold mb-4">Easy EMI</h3>
+        <div className="relative pl-10 border-l border-gray-300">
+          <span className="absolute -left-3 top-2 w-6 h-6 rounded-full bg-gray-900"></span>
 
-        <p className="text-3xl font-extrabold text-gray-900 mb-2">
-          ₹2,500
-        </p>
-        <p className="text-sm text-gray-500 mb-6">
-          per month starting
-        </p>
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            Easy EMI Plans
+          </h3>
 
-        <ul className="text-sm text-gray-600 space-y-2 text-left">
-          <li>• Flexible tenure options</li>
-          <li>• Competitive interest rates</li>
-          <li>• Quick approval process</li>
-          <li>• Minimal documentation</li>
-        </ul>
+          <ul className="text-gray-600 space-y-3 text-sm">
+            <li>Flexible tenure options</li>
+            <li>Low monthly commitment</li>
+            <li>Quick approval process</li>
+            <li>Minimal documentation</li>
+          </ul>
+        </div>
       </div>
 
-      {/* Bank Loans */}
-      <div className="bg-white rounded-3xl p-10 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-gray-100 text-gray-800 text-2xl">
-          🏦
+      {/* Item 2 */}
+      <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="order-2 md:order-1 relative pl-10 border-l border-gray-300">
+          <span className="absolute -left-3 top-2 w-6 h-6 rounded-full bg-gray-700"></span>
+
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            Partner Bank Loans
+          </h3>
+
+          <ul className="text-gray-600 space-y-3 text-sm">
+            <li>Trusted banking partners</li>
+            <li>Pre-approved loan offers</li>
+            <li>Instant processing</li>
+            <li>Competitive interest rates</li>
+          </ul>
         </div>
 
-        <h3 className="text-xl font-semibold mb-4">Bank Loans</h3>
-
-        <p className="text-3xl font-extrabold text-gray-900 mb-2">
-          7.5%
-        </p>
-        <p className="text-sm text-gray-500 mb-6">
-          interest rate onwards
-        </p>
-
-        <ul className="text-sm text-gray-600 space-y-2 text-left">
-          <li>• Partner bank network</li>
-          <li>• Pre-approved loans</li>
-          <li>• Instant loan processing</li>
-          <li>• Attractive interest rates</li>
-        </ul>
+        <div className="order-1 md:order-2 text-left md:pl-16">
+          <p className="text-6xl font-extrabold text-gray-900 mb-2">
+            7.5%
+          </p>
+          <p className="text-sm text-gray-500 uppercase tracking-wider">
+            Interest Rate Onwards
+          </p>
+        </div>
       </div>
-      
 
-      {/* Government Schemes */}
-      <div className="bg-white rounded-3xl p-10 shadow-md hover:shadow-xl transition-all duration-300">
-        <div className="w-14 h-14 mx-auto mb-6 flex items-center justify-center rounded-2xl bg-gray-100 text-gray-800 text-2xl">
-          ✅
+      {/* Item 3 */}
+      <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="text-right md:pr-16">
+          <p className="text-6xl font-extrabold text-gray-900 mb-2">
+            ₹15,000
+          </p>
+          <p className="text-sm text-gray-500 uppercase tracking-wider">
+            Government Subsidy
+          </p>
         </div>
 
-        <h3 className="text-xl font-semibold mb-4">
-          Government Schemes
-        </h3>
+        <div className="relative pl-10 border-l border-gray-300">
+          <span className="absolute -left-3 top-2 w-6 h-6 rounded-full bg-gray-500"></span>
 
-        <p className="text-3xl font-extrabold text-gray-900 mb-2">
-          ₹15,000
-        </p>
-        <p className="text-sm text-gray-500 mb-6">
-          subsidy available
-        </p>
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">
+            Government Incentives
+          </h3>
 
-        <ul className="text-sm text-gray-600 space-y-2 text-left">
-          <li>• FAME II benefits</li>
-          <li>• State government incentives</li>
-          <li>• Tax exemptions</li>
-          <li>• Registration fee waiver</li>
-        </ul>
+          <ul className="text-gray-600 space-y-3 text-sm">
+            <li>FAME II subsidy benefits</li>
+            <li>State EV incentives</li>
+            <li>Tax exemptions</li>
+            <li>Registration fee waiver</li>
+          </ul>
+        </div>
       </div>
 
     </div>
-
   </div>
 </section>
+
 {/* ================= TECHNICAL SPECIFICATIONS ================= */}
 <section className="bg-gray-50 py-32">
   <div className="max-w-7xl mx-auto px-6">
@@ -489,21 +502,103 @@ const Vehicles = () => {
 
 
       {/* ================= FOOTER ================= */}
-      <footer className="bg-gray-900 text-gray-300 py-12"> 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8"> <div>
-          <h3 className="text-xl font-bold text-white mb-2">GREENVOLT</h3>
-           <p className="text-sm">Driving India towards a smarter electric future.</p> </div>
-            <div> <h4 className="font-semibold text-white mb-2">Quick Links</h4> 
-            <ul className="space-y-2 text-sm"> 
-              <li>Home</li> <li>About</li> 
-              <li>Vehicles</li>
-              <li>Contact</li> 
-            </ul> </div>
-             <div> <h4 className="font-semibold text-white mb-2">Contact</h4>
-              <p className="text-sm">Mahesana, Gujarat</p>
-              <p className="text-sm">📞 +91 XXXXX XXXXX</p> </div> </div> 
-              <div className="text-center text-xs text-gray-400 mt-8"> © 2025 GREENVOLT. All rights reserved. </div>
-        </footer>
+      <footer className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-gray-300 pt-20 pb-6">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* TOP FOOTER */}
+          <div className="grid md:grid-cols-3 gap-14 pb-14">
+            {/* BRAND */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <img
+                  src="/image/logo.jpeg"
+                  alt="GreenVolt Logo"
+                  className="w-10 h-10 rounded-full"
+                />
+                <div>
+                  <h2 className="text-xl font-bold text-white tracking-wider">
+                    GREENVOLT
+                  </h2>
+                  <p className="text-sm text-gray-400">
+                    Mahesana, Gujarat
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
+                Leading the electric revolution in Gujarat with sustainable,
+                stylish, and reliable electric vehicles.
+              </p>
+            </div>
+
+            {/* QUICK LINKS */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Quick Links
+              </h3>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <Link to="/about" className="hover:text-green-400 transition">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/vehicles" className="hover:text-green-400 transition">
+                    Our Vehicles
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/whychooseus" className="hover:text-green-400 transition">
+                    Why Choose Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-green-400 transition">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* CONTACT INFO */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Contact Info
+              </h3>
+
+              <ul className="space-y-4 text-sm">
+                <li className="flex gap-3">
+                  <span className="text-green-400">📍</span>
+                  <span>
+                    10, Dediyasan G.I.D.C., Opp. Swagat Residency,
+                    Modhera Road, Mehsana — 384 002
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">📞</span>
+                  <span>9712304660</span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">📞</span>
+                  <span>9974451950</span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">✉️</span>
+                  <span>info@greenvoltev.in</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* DIVIDER */}
+          <div className="border-t border-gray-800 pt-6 text-center text-sm text-gray-400">
+            © 2024 GREENVOLT. All rights reserved | Electric Vehicles in Mahesana |
+            EV Showroom Gujarat
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

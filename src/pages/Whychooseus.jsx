@@ -54,58 +54,65 @@ const WhyChooseUs = () => {
       </section>
 
       {/* ================= CORE REASONS ================= */}
-      <section className="bg-gray-50 py-28">
-        <div className="max-w-7xl mx-auto px-6">
+     <section className="bg-gradient-to-b from-gray-50 via-white to-gray-50 py-32">
+  <div className="max-w-7xl mx-auto px-6">
 
-          <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-16">
-            Built on Innovation & Trust
-          </h2>
+    <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-900 mb-20">
+      Built on Innovation & Trust
+    </h2>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            {[
-              {
-                title: "Advanced Technology",
-                desc: "Smart EV systems and modern engineering designed for a smooth, future-ready ride.",
-                icon: "⚡",
-              },
-              {
-                title: "Eco-Friendly Mobility",
-                desc: "Zero-emission vehicles that reduce pollution and support a cleaner tomorrow.",
-                icon: "🌿",
-              },
-              {
-                title: "Safety First",
-                desc: "Advanced safety features that give you confidence on every journey.",
-                icon: "🛡️",
-              },
-              {
-                title: "Premium Build Quality",
-                desc: "Durable materials and strong design built for Indian road conditions.",
-                icon: "🏆",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="group bg-white/80 backdrop-blur-xl border border-gray-200 rounded-3xl p-10 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 flex gap-6"
-              >
-                <div className="w-14 h-14 flex items-center justify-center rounded-2xl bg-gray-900 text-white text-2xl group-hover:scale-110 transition">
-                  {item.icon}
-                </div>
+    <div className="grid md:grid-cols-2 gap-14">
 
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
+      {[
+        {
+          title: "Advanced Technology",
+          desc: "Smart EV systems and modern engineering designed for a smooth, future-ready ride.",
+          icon: "⚡",
+        },
+        {
+          title: "Eco-Friendly Mobility",
+          desc: "Zero-emission vehicles that reduce pollution and support a cleaner tomorrow.",
+          icon: "🌿",
+        },
+        {
+          title: "Safety First",
+          desc: "Advanced safety features that give you confidence on every journey.",
+          icon: "🛡",
+        },
+        {
+          title: "Premium Build Quality",
+          desc: "Durable materials and strong design built for Indian road conditions.",
+          icon: "🏆",
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="group relative bg-white/90 backdrop-blur-xl border border-gray-200 rounded-3xl p-10 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+        >
+
+          {/* subtle left accent */}
+          <div className="absolute left-0 top-10 bottom-10 w-[3px] bg-gradient-to-b from-transparent via-gray-400 to-transparent rounded-full opacity-40 group-hover:opacity-80 transition"></div>
+
+          {/* title with inline icon */}
+          <h3 className="flex items-center gap-4 text-xl font-semibold text-gray-900 mb-4">
+            <span className="text-gray-500 text-lg">
+              {item.icon}
+            </span>
+            {item.title}
+          </h3>
+
+          <p className="text-gray-600 text-sm leading-relaxed max-w-md">
+            {item.desc}
+          </p>
 
         </div>
-      </section>
+      ))}
+
+    </div>
+
+  </div>
+</section>
+
 
       {/* ================= TRUST STATS ================= */}
       <section className="bg-gradient-to-b from-gray-100 to-gray-200 py-28">
@@ -328,21 +335,103 @@ const WhyChooseUs = () => {
       </section>
 
       {/* ================= FOOTER ================= */}
-     <footer className="bg-gray-900 text-gray-300 py-12"> 
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8"> <div>
-          <h3 className="text-xl font-bold text-white mb-2">GREENVOLT</h3>
-           <p className="text-sm">Driving India towards a smarter electric future.</p> </div>
-            <div> <h4 className="font-semibold text-white mb-2">Quick Links</h4> 
-            <ul className="space-y-2 text-sm"> 
-              <li>Home</li> <li>About</li> 
-              <li>Vehicles</li>
-              <li>Contact</li> 
-            </ul> </div>
-             <div> <h4 className="font-semibold text-white mb-2">Contact</h4>
-              <p className="text-sm">Mahesana, Gujarat</p>
-              <p className="text-sm">📞 +91 XXXXX XXXXX</p> </div> </div> 
-              <div className="text-center text-xs text-gray-400 mt-8"> © 2025 GREENVOLT. All rights reserved. </div>
-        </footer>
+     <footer className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-gray-300 pt-20 pb-6">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* TOP FOOTER */}
+          <div className="grid md:grid-cols-3 gap-14 pb-14">
+            {/* BRAND */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <img
+                  src="/image/logo.jpeg"
+                  alt="GreenVolt Logo"
+                  className="w-10 h-10 rounded-full"
+                />
+                <div>
+                  <h2 className="text-xl font-bold text-white tracking-wider">
+                    GREENVOLT
+                  </h2>
+                  <p className="text-sm text-gray-400">
+                    Mahesana, Gujarat
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
+                Leading the electric revolution in Gujarat with sustainable,
+                stylish, and reliable electric vehicles.
+              </p>
+            </div>
+
+            {/* QUICK LINKS */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Quick Links
+              </h3>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <Link to="/about" className="hover:text-green-400 transition">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/vehicles" className="hover:text-green-400 transition">
+                    Our Vehicles
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/whychooseus" className="hover:text-green-400 transition">
+                    Why Choose Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-green-400 transition">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* CONTACT INFO */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Contact Info
+              </h3>
+
+              <ul className="space-y-4 text-sm">
+                <li className="flex gap-3">
+                  <span className="text-green-400">📍</span>
+                  <span>
+                    10, Dediyasan G.I.D.C., Opp. Swagat Residency,
+                    Modhera Road, Mehsana — 384 002
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">📞</span>
+                  <span>9712304660</span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">📞</span>
+                  <span>9974451950</span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">✉️</span>
+                  <span>info@greenvoltev.in</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* DIVIDER */}
+          <div className="border-t border-gray-800 pt-6 text-center text-sm text-gray-400">
+            © 2024 GREENVOLT. All rights reserved | Electric Vehicles in Mahesana |
+            EV Showroom Gujarat
+          </div>
+        </div>
+      </footer>
 
     </div>
   );

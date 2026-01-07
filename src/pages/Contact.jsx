@@ -267,11 +267,103 @@ const Contact = () => {
       </section>
 
       {/* ================= FOOTER ================= */}
-      <footer className="bg-gray-950 text-gray-400 py-14 text-center text-sm">
-        © 2025 <span className="text-gray-200 font-semibold">GREENVOLT</span>.  
-        All rights reserved.
-      </footer>
+      <footer className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-gray-300 pt-20 pb-6">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* TOP FOOTER */}
+          <div className="grid md:grid-cols-3 gap-14 pb-14">
+            {/* BRAND */}
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <img
+                  src="/image/logo.jpeg"
+                  alt="GreenVolt Logo"
+                  className="w-10 h-10 rounded-full"
+                />
+                <div>
+                  <h2 className="text-xl font-bold text-white tracking-wider">
+                    GREENVOLT
+                  </h2>
+                  <p className="text-sm text-gray-400">
+                    Mahesana, Gujarat
+                  </p>
+                </div>
+              </div>
 
+              <p className="text-sm leading-relaxed text-gray-400 max-w-sm">
+                Leading the electric revolution in Gujarat with sustainable,
+                stylish, and reliable electric vehicles.
+              </p>
+            </div>
+
+            {/* QUICK LINKS */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Quick Links
+              </h3>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <Link to="/about" className="hover:text-green-400 transition">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/vehicles" className="hover:text-green-400 transition">
+                    Our Vehicles
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/whychooseus" className="hover:text-green-400 transition">
+                    Why Choose Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-green-400 transition">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* CONTACT INFO */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Contact Info
+              </h3>
+
+              <ul className="space-y-4 text-sm">
+                <li className="flex gap-3">
+                  <span className="text-green-400">📍</span>
+                  <span>
+                    10, Dediyasan G.I.D.C., Opp. Swagat Residency,
+                    Modhera Road, Mehsana — 384 002
+                  </span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">📞</span>
+                  <span>9712304660</span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">📞</span>
+                  <span>9974451950</span>
+                </li>
+
+                <li className="flex gap-3">
+                  <span className="text-green-400">✉️</span>
+                  <span>info@greenvoltev.in</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* DIVIDER */}
+          <div className="border-t border-gray-800 pt-6 text-center text-sm text-gray-400">
+            © 2024 GREENVOLT. All rights reserved | Electric Vehicles in Mahesana |
+            EV Showroom Gujarat
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
